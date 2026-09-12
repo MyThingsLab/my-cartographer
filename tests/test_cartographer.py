@@ -126,3 +126,7 @@ def test_map_is_idempotent_on_an_unchanged_corpus(tmp_path: Path) -> None:
 
     assert run().outcome == "success"
     assert run().outcome == "skipped"  # nothing changed → no second write
+
+
+def test_noop_placeholder() -> None:
+    assert True
